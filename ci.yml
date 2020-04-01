@@ -1,0 +1,17 @@
+Global:
+  tool: build_submitter
+
+Default:
+  profile: [deploy]
+
+Profiles:
+  - profile:
+    name: release
+    env: centos6u3
+    command: sh ./build.sh
+    release: true
+  - profile:
+    name : deploy
+    env : centos6u3
+    command : sh ./build.sh
+    release : true

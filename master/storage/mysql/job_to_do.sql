@@ -1,0 +1,15 @@
+/*
+  第一版仅支持：按任务存储各自的待抓取数据,后续可优化
+*/
+CREATE DATABASE IF NOT EXISTS greedy DEFAULT CHARACTER SET utf8mb4;
+CREATE TABLE IF NOT EXISTS `job_data`(
+    `id` BIGINT AUTO_INCREMENT,
+    `phone` VARCHAR(20) DEFAULT NULL,
+    `batch` VARCHAR(20) DEFAULT NULL,
+    `job_id` VARCHAR(50) DEFAULT NULL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+)DEFAULT CHARACTER SET utf8mb4;
+
+ALTER TABLE job_data ADD UNIQUE `job_phone` (`job_id`,`phone`);

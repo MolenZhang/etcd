@@ -1,0 +1,8 @@
+.svn
+.tmp
+.download
+output
+.*.swp
+.*.swo
+./bin/greedy-master
+./bin/greedy-worker
