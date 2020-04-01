@@ -55,4 +55,4 @@ mysql中主要存放与任务相关的号码信息，即待抓取数据 由服�
 ```
 
 # <font color=Green size=5>**项目负责人**</font>
-* 张锋<<a href="mailto:zhangfeng15@molen.com">zhangfeng15@molen.com</a>>
+* Molen<<a href="mailto:molen@molen.com">molen@molen.com</a>>
